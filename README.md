@@ -13,6 +13,8 @@ I like the colour and ambience of the RUINER website.
 
 https://www.ruinergame.com/
 https://www.cyberpunk.net/en/
+https://superhotgame.com/ 
+https://reddit.com/r/cyberpunk/ 
 
 ### Author Webpages
 
