@@ -18,6 +18,7 @@ body {
  * * * * * * * * * * * * * * * * * * * * * * */
 header { 
     height: 80px;
+    font-family: "Share Tech Mono", monospace; 
 }
 
 header .container { 
@@ -29,16 +30,14 @@ header .container {
 
 .company { 
     display: flex; 
-    font-family: "Share Tech Mono", monospace; 
     align-items: center; 
-    flex: 1; 
+    flex: 3; 
     height: 100%;
 }
 
 .company a { 
     display: flex; 
     align-items: center; 
-    height: 100%;
 }
 
 .company i {
@@ -46,7 +45,7 @@ header .container {
 }
 
 header a { 
-    color: #f31616; 
+    color: #f31616;
 }
 
 /* TODO: We need to figure out a good way to indicate hovering in the header*/
@@ -55,9 +54,37 @@ header a:hover {
     text-decoration: none; 
 }
 
+nav { 
+    height: 100%;
+}
+
 header ul { 
     display: flex; 
+    align-items: center; 
+
     list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%;
+}
+
+header li { 
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    flex: 1; 
+    padding: 0px 20px;
+}
+
+header li a { 
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+header li a:hover { 
+    color: #050505; 
+    background-color: #f31616; 
 }
 
  /* * * * * * * * * * * * * * * * * * * * * * *
