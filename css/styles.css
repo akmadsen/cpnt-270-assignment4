@@ -92,6 +92,73 @@ header li a:hover {
  FOOTER
  * * * * * * * * * * * * * * * * * * * * * * */
 
+footer { 
+    height: 150px;
+}
+
+footer h2 { 
+    text-align: center; 
+    font-family: 'Share Tech Mono', cursive; 
+}
+
+footer hr { 
+    border-color: #f31616; 
+    border-width: 3px; 
+}
+
+footer .container {
+    height: 100%;
+}
+
+footer ul { 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+footer li { 
+    list-style: none; 
+}
+
+footer a { 
+    color: #f31616; 
+}
+
+footer a:hover { 
+    background: #f31616; 
+    color: #050505; 
+}
+
  /* * * * * * * * * * * * * * * * * * * * * * *
  MAIN PAGE
  * * * * * * * * * * * * * * * * * * * * * * */
+
+ main { 
+     height: 800px;
+ }
+
+main .container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+
+    height: 100%;
+}
+
+ main h1, main h2 { 
+     font-family: 'VT323', monospace; 
+ }
+
+ main p { 
+     font-family: 'Share Tech Mono', monospace; 
+ }
+
+ main button { 
+     background: #f31616; 
+     color: #050505; 
+     border: none; 
+     font-family: 'Share Tech Mono', monospace; 
+     font-size: 2em; 
+     text-align: center;
+ }
