@@ -29,4 +29,4 @@ The goal of this project is to redo a cyberpunk Author's website, like [William 
 * [Lorem Gibson](http://loremgibson.com/ "Lorem Gibson Website")
 * [Google Fonts](https://fonts.google.com/ "Google Fonts Website") 
 * [Zeit NOW](https://zeit.co/now "Zeit Now Website")
-* [ZURB Foundation](https://foundation.zurb.com/ "ZURB Foundation Website")
+* [Bootstrap](https://getbootstrap.com "Bootstrap Website")
