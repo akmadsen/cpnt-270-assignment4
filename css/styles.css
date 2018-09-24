@@ -1,0 +1,69 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+ GENERAL
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+ /*****
+ * Colour Palette: (Black, White and 1-Colour) 
+ *  Background  : #050505 (Black) 
+ *  Theme       : #f31616 (Red)
+ */
+
+body { 
+    background-color: #050505; 
+    color: #f31616; 
+}
+
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ HEADER
+ * * * * * * * * * * * * * * * * * * * * * * */
+header { 
+    height: 80px;
+}
+
+header .container { 
+    display: flex; 
+    font-size: 1.4em; 
+    align-items: center; 
+    height: 100%;
+}
+
+.company { 
+    display: flex; 
+    font-family: "Share Tech Mono", monospace; 
+    align-items: center; 
+    flex: 1; 
+    height: 100%;
+}
+
+.company a { 
+    display: flex; 
+    align-items: center; 
+    height: 100%;
+}
+
+.company i {
+    margin-right: 10px; 
+}
+
+header a { 
+    color: #f31616; 
+}
+
+/* TODO: We need to figure out a good way to indicate hovering in the header*/
+header a:hover { 
+    color: #f31616; 
+    text-decoration: none; 
+}
+
+header ul { 
+    display: flex; 
+    list-style: none; 
+}
+
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ FOOTER
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ MAIN PAGE
+ * * * * * * * * * * * * * * * * * * * * * * */
