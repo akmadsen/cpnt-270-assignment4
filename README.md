@@ -1,9 +1,8 @@
 # CPNT 270 - Assignment 4 - A (Mostly) Functioning Website
 
-_Theme:_ Cyberpunk Novelist Website 
+__Theme:__ Cyberpunk Novelist Website 
 
 The goal of this project is to redo a cyberpunk Author's website, like [William Gibson's](http://williamgibsonbooks.com "William Gibson's Website"), in the style of more modern cyberpunk aesthetic. The primary influence will be [Ruiner](https://www.ruinergame.com "Ruiner Game Website"), but other cyberpunk influences are drawn from as well. 
-
 
 ## Sources of Inspiration: 
 
