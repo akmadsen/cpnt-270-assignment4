@@ -23,3 +23,10 @@ The goal of this project is to redo a cyberpunk Author's website, like [William 
 * [Ernest Cline's Website](http://www.ernestcline.com/ "Ernest Cline's Website")
 * [David Wong's Website](https://www.johndiesattheend.com/ "David Wong's Website")
 * [Richard Morgan's Website](https://www.richardkmorgan.com/ "Richard Morgan's Website")
+
+## Technologies Used
+
+* [Lorem Gibson](http://loremgibson.com/ "Lorem Gibson Website")
+* [Google Fonts](https://fonts.google.com/ "Google Fonts Website") 
+* [Zeit NOW](https://zeit.co/now "Zeit Now Website")
+* [ZURB Foundation](https://foundation.zurb.com/ "ZURB Foundation Website")
