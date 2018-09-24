@@ -5,17 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CPNT 270 - Assignment 4 - Cyberpunk Website</title>
 </head>
 
 <body>
-    <!-- USE THE DIZZY FONT-AWESOME SITE -->
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./product.html">Books</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-    </ul>
+    <header>
+        <div class="company">
+            <div class="logo">
+                <!-- USE THE DIZZY FONT-AWESOME SITE -->
+                &lt;LOGO&gt;
+            </div>
+            <span>Company Name</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product.html">Books</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Send Us All Your Thoughts</h1>
+        <form action="#" method="post">
+            <!-- Comment Text Area -->
+            <label for="textarea">Comment:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="John Doe" />
+
+            <!-- Email Field -->
+            <label for="name">Email:</label>
+            <input id="name" type="text" name="name" placeholder="john.doe@ecorp.biz" />
+
+            <!-- Website Field -->
+            <label for="name">Website:</label>
+            <input id="name" type="text" name="name" placeholder="www.worlddomination.net" />
+
+            <button type="submit">Submit Your Thought</button>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Google+</a></li>
+            <li><a href="#">RSS</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
