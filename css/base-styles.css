@@ -70,8 +70,8 @@ button:focus {
 }
 
 .mobile-menu a { 
-    display: flex; 
-    justify-content: center;
+    display: block; 
+    text-align: center; 
     font-size: 1.4em; 
     color: #050505; 
     width: 100%; 
