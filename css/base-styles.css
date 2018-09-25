@@ -21,6 +21,14 @@
 body { 
     background-color: #050505; 
     color: #f31616; 
+}   
+
+a:focus { 
+    outline: 2px solid #f31616; 
+}
+
+button:focus { 
+    outline: 4px solid #050505; 
 }
 
  /* * * * * * * * * * * * * * * * * * * * * * *
@@ -62,6 +70,7 @@ header a {
 header a:hover { 
     color: #f53d3d; 
     text-decoration: none; 
+    position: relative; 
 }
 
 nav { 
@@ -103,6 +112,12 @@ header li a:hover {
     background-color: #050505; 
     border: #f31616; 
     display: none; 
+}
+
+.animated-menu { 
+    display: flex; 
+    height: 100vh; 
+    position: absolute;
 }
 
 @media (max-width: 768px) { 
