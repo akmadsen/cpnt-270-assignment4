@@ -1,0 +1,46 @@
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ MAIN PAGE
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+main { 
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("../assets/denys-nevozhai-351730-unsplash.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+main .container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    
+    height: 100%;
+}
+
+main h1, main h2, main p { 
+    background: #050505dc; 
+    padding: 0 10px;
+}
+
+main h1, main h2 { 
+    font-family: 'VT323', monospace; 
+}
+
+main p { 
+    text-align: justify; 
+    font-family: 'Share Tech Mono', monospace; 
+}
+
+main button { 
+    background: #f31616; 
+    color: #050505; 
+    border: none; 
+    font-family: 'Share Tech Mono', monospace; 
+    font-size: 2em; 
+    text-align: center;
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
