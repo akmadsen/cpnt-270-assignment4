@@ -2,22 +2,42 @@
  MAIN PAGE
  * * * * * * * * * * * * * * * * * * * * * * */
 
+/***** 
+ * Bootstrap Breakpoints 
+ * xs - considered the default 
+ * Small Devices - 576px 
+ * Medium Devices - 768px 
+ * Large Devices - 992px 
+ * Extra Large Devices - 1200px
+ */ 
+
 main { 
-    height: 800px;
+    min-height: 800px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
         url("../assets/denys-nevozhai-351730-unsplash.jpg"); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
+
+    padding: 30px 10px; 
 }
 
-main .container { 
+main .container {    
+    display: flex; 
+    justify-content: center; 
+    height: 100%;
+}
+
+.main-content { 
+    height: 100%;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
-    
-    height: 100%;
+    width: 75%; 
 }
 
 main h1, main h2, main p { 
@@ -43,4 +63,14 @@ main button {
     text-align: center;
     text-transform: uppercase; 
     font-weight: bold; 
+}
+
+main button:hover {
+    background-color: #f53d3d; 
+}
+
+@media (max-width: 992px) { 
+    .main-content { 
+        width: 100%; 
+    }
 }

@@ -5,8 +5,18 @@
  /*****
  * Colour Palette: (Black, White and 1-Colour) 
  *  Background  : #050505 (Black) 
- *  Theme       : #f31616 (Red)
+ *  Theme       : #f31616 (Red) / #f53d3d (red highlight) 
  */
+
+
+/***** 
+ * Bootstrap Breakpoints 
+ * xs - considered the default 
+ * Small Devices - 576px 
+ * Medium Devices - 768px 
+ * Large Devices - 992px 
+ * Extra Large Devices - 1200px
+ */ 
 
 body { 
     background-color: #050505; 
@@ -50,7 +60,7 @@ header a {
 
 /* TODO: We need to figure out a good way to indicate hovering in the header*/
 header a:hover { 
-    color: #f31616; 
+    color: #f53d3d; 
     text-decoration: none; 
 }
 
@@ -86,6 +96,29 @@ header li a {
 header li a:hover { 
     color: #050505; 
     background-color: #f31616; 
+}
+
+.mobile-nav { 
+    color: #f31616; 
+    background-color: #050505; 
+    border: #f31616; 
+    display: none; 
+}
+
+@media (max-width: 768px) { 
+    .mobile-nav { 
+        display: block; 
+    }
+
+    .desktop-nav { 
+        display: none; 
+    }
+}
+
+@media (max-width: 992px) { 
+    header li { 
+        width: 100px; 
+    }
 }
 
  /* * * * * * * * * * * * * * * * * * * * * * *
@@ -128,50 +161,3 @@ footer a {
 footer a:hover { 
     color: #f53d3d; 
 }
-
- /* * * * * * * * * * * * * * * * * * * * * * *
- MAIN PAGE
- * * * * * * * * * * * * * * * * * * * * * * */
-
-main { 
-    height: 800px;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-        url("../assets/denys-nevozhai-351730-unsplash.jpg"); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-}
-
-main .container { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    
-    height: 100%;
-}
-
-main h1, main h2, main p { 
-    background: #050505dc; 
-    padding: 0 10px;
-}
-
- main h1, main h2 { 
-     font-family: 'VT323', monospace; 
- }
-
- main p { 
-     text-align: justify; 
-     font-family: 'Share Tech Mono', monospace; 
- }
-
- main button { 
-     background: #f31616; 
-     color: #050505; 
-     border: none; 
-     font-family: 'Share Tech Mono', monospace; 
-     font-size: 2em; 
-     text-align: center;
-     text-transform: uppercase; 
-     font-weight: bold; 
- }
