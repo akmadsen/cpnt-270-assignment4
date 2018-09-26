@@ -34,6 +34,7 @@ Hero Section Styles
 
 .hero p { 
     font-family: 'Share Tech Mono', monospace;
+    font-size: 1.6em
 }
 
 .hero .container { 
@@ -51,10 +52,35 @@ Hero Section Styles
     width: 275px; 
     height: 400px; 
     border: 2px dashed #f31616;
-    position: relative;
     transform: rotate(-5deg) translate(20px, -20px); 
 
     margin-left: 120px;
+}
+
+@media (max-width: 768px) { 
+    .hero .container { 
+        flex-direction: column; 
+        padding: 50px 15px; 
+    }
+
+    .hero h1 { 
+        margin-top: 20px; 
+        text-align: center; 
+    }
+
+    .hero h2 { 
+        text-align: center; 
+    }
+
+    .hero p { 
+        text-align: center; 
+    }
+
+    .hero img { 
+        margin-left: 0; 
+        margin-top: 50px; 
+        text-align: center; 
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * 
