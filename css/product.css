@@ -89,6 +89,12 @@ main h2 {
     width: 200px;
     position: absolute; 
     bottom: 0; 
+    transition: 0.2s; 
+    transform: translate(0px, 0px); 
+}
+
+.book-card:hover .book-cover { 
+    transform: translate(0, -40px); 
 }
 
 .book-card:nth-child(even) .book-cover{ 
