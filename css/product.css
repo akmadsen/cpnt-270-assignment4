@@ -8,6 +8,9 @@ Hero Section Styles
         url('../assets/alex-knight-326705-unsplash.jpg'); 
     background-size: cover; 
     background-position: center; 
+
+    position: relative;
+    z-index: 200; 
 }
 
 .hero h1, .hero h2, .hero p { 
@@ -61,6 +64,9 @@ Main Section Styles
 main { 
     min-height: 80vh;
     padding: 40px 0; 
+
+    position: relative;
+    z-index: 0; 
 }
 
 main h2 { 
