@@ -59,8 +59,7 @@ Main Section Styles
 * * * * * * * * * * * * * * * * * * * * * */
 
 main { 
-
-    height: 80vh;
+    min-height: 80vh;
     padding: 40px 0; 
 }
 
@@ -73,16 +72,31 @@ main h2 {
 
 .book-card { 
     display: flex; 
-    justify-content: flex-end; 
-    align-items: baseline; 
     height: 400px;
     position: relative;
 }
 
+.book-card:nth-child(even) { 
+    justify-content: flex-end; 
+
+}
+.book-card:nth-child(odd) { 
+    justify-content: flex-start; 
+}
+
 .book-cover { 
     height: 300px;
-    width: 200px
+    width: 200px;
     position: absolute; 
+    bottom: 0; 
+}
+
+.book-card:nth-child(even) .book-cover{ 
+    left: 0;
+}
+
+.book-card:nth-child(odd) .book-cover { 
+    right: 0; 
 }
 
 .book-cover img {
@@ -90,7 +104,28 @@ main h2 {
 }
 
 .book-description { 
-    background-color: darkviolet; 
     width: 75%; 
     height: 225px;
+    margin-top: auto; 
+    border: 2px dashed #f31616;
+
+    padding: 20px; 
+}
+
+.book-card:nth-child(even) .book-description { 
+    text-align: right; 
+}
+
+.book-card:nth-child(odd) .book-description { 
+    text-align: left; 
+}
+
+.book-card h3 { 
+    font-family: 'Share Tech Mono', monospace; 
+    font-weight: bold;
+}
+
+.book-card p { 
+    font-family: 'Share Tech Mono', monospace; 
+    font-size: 1.2em;
 }
