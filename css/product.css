@@ -21,6 +21,14 @@ Hero Section Styles
     font-family: 'VT323', monospace; 
 }
 
+.hero h1 { 
+    font-size: 60px; 
+}
+
+.hero h2 { 
+    font-size: 45px;
+}
+
 .hero p { 
     font-family: 'Share Tech Mono', monospace;
 }
@@ -49,3 +57,40 @@ Hero Section Styles
 /* * * * * * * * * * * * * * * * * * * * * * 
 Main Section Styles
 * * * * * * * * * * * * * * * * * * * * * */
+
+main { 
+
+    height: 80vh;
+    padding: 40px 0; 
+}
+
+main h2 { 
+    text-align: center; 
+    margin-bottom: 40px;
+    font-family: 'VT323', monospace;
+    font-size: 45px; 
+}
+
+.book-card { 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: baseline; 
+    height: 400px;
+    position: relative;
+}
+
+.book-cover { 
+    height: 300px;
+    width: 200px
+    position: absolute; 
+}
+
+.book-cover img {
+    height: 300px;; 
+}
+
+.book-description { 
+    background-color: darkviolet; 
+    width: 75%; 
+    height: 225px;
+}
