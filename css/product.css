@@ -1,0 +1,16 @@
+/* * * * * * * * * * * * * * * * * * * * * * 
+Hero Section Styles
+* * * * * * * * * * * * * * * * * * * * * */
+
+.hero .container { 
+    display: flex; 
+}
+
+.hero img { 
+    width: 300px; 
+    height: 400px; 
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+Main Section Styles
+* * * * * * * * * * * * * * * * * * * * * */
