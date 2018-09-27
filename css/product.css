@@ -144,7 +144,6 @@ main h2 {
     .book-card { 
         height: 300px;
         margin-bottom: 40px; 
-        justify-content: space-between;
     }
     
     .book-card:nth-child(even) { 
@@ -162,7 +161,7 @@ main h2 {
     }
 }
 
-@media (max-width: 769px) {
+@media (min-width: 769px) {
     .book-card:hover .book-cover { 
         transform: translate(0, -40px); 
     }
