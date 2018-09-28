@@ -1,0 +1,40 @@
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ FOOTER
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+ footer { 
+    height: 150px;
+    padding-top: 20px; 
+}
+
+footer h2 { 
+    text-align: center; 
+    font-family: 'Share Tech Mono', cursive; 
+}
+
+footer hr { 
+    border-color: $secondary-color;
+    border-width: 3px; 
+}
+
+footer .container {
+    height: 100%;
+}
+
+footer ul { 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+footer li { 
+    list-style: none; 
+}
+
+footer a { 
+    color: $secondary-color;
+}
+
+footer a:hover { 
+    color: $accent-color;
+}

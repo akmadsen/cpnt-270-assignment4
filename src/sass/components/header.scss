@@ -1,0 +1,172 @@
+ /* * * * * * * * * * * * * * * * * * * * * * *
+ HEADER
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+ .mobile-menu { 
+    background-color: $secondary-color; 
+    
+    width: 300px; 
+    height: 100vh; 
+
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    z-index: 400; 
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+    transition: 0.2s;
+    
+    padding: 40px 0; 
+
+    font-family: 'Shared Tech Mono', monospace;
+}
+
+.mobile-menu ul { 
+    padding: 0; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.mobile-menu li { 
+    list-style: none;
+    width: 100%;  
+}
+
+.mobile-menu a { 
+    display: block; 
+    text-align: center; 
+    font-size: 1.4em; 
+    color: $background-color; 
+    width: 100%; 
+}
+
+.mobile-menu a:hover { 
+    background-color: $background-color; 
+    color: $secondary-color;
+    text-decoration: none; 
+}
+
+.close-button { 
+    background: $background-color; 
+    color: $secondary-color; 
+    border: none; 
+
+    font-family: "Share Tech Mono", monospace; 
+    font-size: 1.4em;
+
+    padding: 5px 20px; 
+
+    margin-bottom: 20px; 
+}
+
+.close-button:focus { 
+    outline: 4px solid $accent-color;
+}
+
+.closed { 
+    transform: translate(300px, 0px); 
+}
+
+header { 
+    height: 80px;
+    font-family: "Share Tech Mono", monospace; 
+    
+    position: relative; 
+    z-index: 300; 
+}
+
+header .container { 
+    display: flex; 
+    align-items: center;
+
+    font-size: 1.4em; 
+    height: 100%;
+}
+
+.company { 
+    display: flex; 
+    align-items: center; 
+    flex: 3; 
+    
+    height: 100%;
+}
+
+.company i {
+    margin-right: 10px; 
+}
+
+header a { 
+    color: $secondary-color; 
+    display: flex; 
+    align-items: center;
+    height: 100%;
+}
+
+/* TODO: We need to figure out a good way to indicate hovering in the header*/
+header a:hover { 
+    color: $accent-color;
+    text-decoration: none; 
+    position: relative; 
+}
+
+nav { 
+    height: 100%;
+}
+
+header ul { 
+    display: flex; 
+    align-items: center; 
+
+    height: 100%;
+
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header li { 
+    display: flex;
+    align-items: center; 
+    flex: 1; 
+    width: 150px; 
+
+    height: 100%;    
+}
+
+header li a { 
+    width: 100%; 
+    justify-content: center; 
+}
+
+header li a:hover { 
+    color: $background-color; 
+    background-color: $secondary-color;
+}
+
+.open-button { 
+    color: $secondary-color;
+    background-color: $background-color; 
+    border: $button-border-colors; 
+    display: none; 
+}
+
+@media (max-width: 768px) { 
+    .open-button { 
+        display: block; 
+    }
+
+    .desktop-nav { 
+        display: none; 
+    }
+}
+
+@media (max-width: 992px) { 
+    header li { 
+        width: 100px; 
+    }
+}
