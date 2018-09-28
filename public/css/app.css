@@ -1,5 +1,5 @@
 .mobile-menu {
-  background-color: #f31616;
+  background-color: #4c65ff;
   width: 300px;
   height: 100vh;
   position: absolute;
@@ -28,17 +28,17 @@
   display: block;
   text-align: center;
   font-size: 1.4em;
-  color: #050505;
+  color: #F14F80;
   width: 100%; }
 
 .mobile-menu a:hover {
-  background-color: #050505;
-  color: #f31616;
+  background-color: #F14F80;
+  color: #4c65ff;
   text-decoration: none; }
 
 .close-button {
-  background: #050505;
-  color: #f31616;
+  background: #F14F80;
+  color: #4c65ff;
   border: none;
   font-family: "Share Tech Mono", monospace;
   font-size: 1.4em;
@@ -46,7 +46,7 @@
   margin-bottom: 20px; }
 
 .close-button:focus {
-  outline: 4px solid #f53d3d; }
+  outline: 4px solid #FFF44C; }
 
 .closed {
   transform: translate(300px, 0px); }
@@ -73,14 +73,14 @@ header .container {
   margin-right: 10px; }
 
 header a {
-  color: #f31616;
+  color: #4c65ff;
   display: flex;
   align-items: center;
   height: 100%; }
 
 /* TODO: We need to figure out a good way to indicate hovering in the header*/
 header a:hover {
-  color: #f53d3d;
+  color: #FFF44C;
   text-decoration: none;
   position: relative; }
 
@@ -107,12 +107,12 @@ header li a {
   justify-content: center; }
 
 header li a:hover {
-  color: #050505;
-  background-color: #f31616; }
+  color: #F14F80;
+  background-color: #4c65ff; }
 
 .open-button {
-  color: #f31616;
-  background-color: #050505;
+  color: #4c65ff;
+  background-color: #F14F80;
   border: #1b1212;
   display: none; }
 
@@ -138,7 +138,7 @@ footer h2 {
   font-family: 'Share Tech Mono', cursive; }
 
 footer hr {
-  border-color: #f31616;
+  border-color: #4c65ff;
   border-width: 3px; }
 
 footer .container {
@@ -153,10 +153,10 @@ footer li {
   list-style: none; }
 
 footer a {
-  color: #f31616; }
+  color: #4c65ff; }
 
 footer a:hover {
-  color: #f53d3d; }
+  color: #FFF44C; }
 
 .hero {
   min-height: 800px;
@@ -195,8 +195,8 @@ main p {
   font-size: 1.3em; }
 
 main button {
-  background: #f31616;
-  color: #050505;
+  background: #4c65ff;
+  color: #F14F80;
   border: none;
   font-family: 'Share Tech Mono', monospace;
   font-size: 2em;
@@ -205,7 +205,7 @@ main button {
   font-weight: bold; }
 
 main button:hover {
-  background-color: #f53d3d; }
+  background-color: #FFF44C; }
 
 @media (max-width: 992px) {
   .main-content {
