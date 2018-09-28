@@ -194,13 +194,20 @@ footer a:hover {
   .index-hero .fake-book {
     width: 200px;
     background-color: #f14f80;
+    color: #4c65ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 300px;
     margin-right: auto;
     border-radius: 10px; }
+    .index-hero .fake-book h3 {
+      text-decoration: underline; }
   @media (max-width: 992px) {
     .index-hero {
       width: 100%; } }
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .index-hero {
       flex-direction: column; }
       .index-hero .fake-book {
