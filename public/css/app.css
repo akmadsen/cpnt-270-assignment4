@@ -12,29 +12,28 @@
   transition: 0.2s;
   padding: 40px 0;
   font-family: 'Shared Tech Mono', monospace; }
+  .mobile-menu ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mobile-menu li {
+    list-style: none;
+    width: 100%; }
+  .mobile-menu a {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    color: #F14F80;
+    width: 100%; }
+    .mobile-menu a:hover {
+      background-color: #F14F80;
+      color: #4c65ff;
+      text-decoration: none; }
 
-.mobile-menu ul {
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.mobile-menu li {
-  list-style: none;
-  width: 100%; }
-
-.mobile-menu a {
-  display: block;
-  text-align: center;
-  font-size: 1.4em;
-  color: #F14F80;
-  width: 100%; }
-
-.mobile-menu a:hover {
-  background-color: #F14F80;
-  color: #4c65ff;
-  text-decoration: none; }
+.closed {
+  transform: translate(300px, 0px); }
 
 .close-button {
   background: #F14F80;
@@ -44,12 +43,8 @@
   font-size: 1.4em;
   padding: 5px 20px;
   margin-bottom: 20px; }
-
-.close-button:focus {
-  outline: 4px solid #FFF44C; }
-
-.closed {
-  transform: translate(300px, 0px); }
+  .close-button:focus {
+    outline: 4px solid #FFF44C; }
 
 header {
   height: 80px;
