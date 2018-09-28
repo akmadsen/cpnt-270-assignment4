@@ -79,45 +79,40 @@ header {
 
 nav {
   height: 100%; }
-
-nav ul {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-nav li {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  width: 150px;
-  height: 100%; }
-
-nav li a {
-  width: 100%;
-  justify-content: center; }
-
-nav li a:hover {
-  color: #4c65ff;
-  background-color: #FFF44C; }
+  nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  nav li {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 150px;
+    height: 100%; }
+    nav li a {
+      width: 100%;
+      justify-content: center; }
+      nav li a:hover {
+        color: #4c65ff;
+        background-color: #FFF44C; }
+  @media (max-width: 768px) {
+    nav {
+      display: none; } }
+  @media (max-width: 992px) {
+    nav li {
+      width: 100px; } }
 
 .open-button {
-  color: #FFF44C;
+  color: #f14f80;
   background-color: #4c65ff;
   border: #1b1212;
   display: none; }
-
-@media (max-width: 768px) {
-  .open-button {
-    display: block; }
-  .desktop-nav {
-    display: none; } }
-
-@media (max-width: 992px) {
-  header li {
-    width: 100px; } }
+  @media (max-width: 768px) {
+    .open-button {
+      display: block; } }
 
 /* * * * * * * * * * * * * * * * * * * * * * *
  FOOTER
