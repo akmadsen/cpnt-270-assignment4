@@ -1,5 +1,5 @@
 .mobile-menu {
-  background-color: #4c65ff;
+  background-color: #FFF44C;
   width: 300px;
   height: 100vh;
   padding: 40px 0;
@@ -25,21 +25,21 @@
     display: block;
     text-align: center;
     font-size: 1.4em;
-    color: #F14F80;
+    color: #4c65ff;
     width: 100%; }
     .mobile-menu a:hover {
-      background-color: #F14F80;
-      color: #4c65ff;
+      background-color: #4c65ff;
+      color: #FFF44C;
       text-decoration: none; }
 
 .closed {
   transform: translate(300px, 0px); }
 
 .close-button {
-  background: #F14F80;
-  color: #4c65ff;
+  background: #4c65ff;
+  color: #FFF44C;
   border: none;
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Shared Tech Mono", monospace;
   font-size: 1.4em;
   padding: 5px 20px;
   margin-bottom: 20px; }
@@ -48,41 +48,39 @@
 
 header {
   height: 80px;
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Shared Tech Mono", monospace;
+  background-color: #4c65ff;
+  color: #f14f80;
   position: relative;
   z-index: 300; }
-
-header .container {
-  display: flex;
-  align-items: center;
-  font-size: 1.4em;
-  height: 100%; }
+  header .container {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    height: 100%; }
+  header a {
+    color: #f14f80;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* TODO: We need to figure out a good way to indicate hovering in the header*/ }
+    header a:hover {
+      color: #FFF44C;
+      text-decoration: none;
+      position: relative; }
 
 .company {
   display: flex;
   align-items: center;
   flex: 3;
   height: 100%; }
-
-.company i {
-  margin-right: 10px; }
-
-header a {
-  color: #4c65ff;
-  display: flex;
-  align-items: center;
-  height: 100%; }
-
-/* TODO: We need to figure out a good way to indicate hovering in the header*/
-header a:hover {
-  color: #FFF44C;
-  text-decoration: none;
-  position: relative; }
+  .company i {
+    margin-right: 10px; }
 
 nav {
   height: 100%; }
 
-header ul {
+nav ul {
   display: flex;
   align-items: center;
   height: 100%;
@@ -90,24 +88,24 @@ header ul {
   margin: 0;
   padding: 0; }
 
-header li {
+nav li {
   display: flex;
   align-items: center;
   flex: 1;
   width: 150px;
   height: 100%; }
 
-header li a {
+nav li a {
   width: 100%;
   justify-content: center; }
 
-header li a:hover {
-  color: #F14F80;
-  background-color: #4c65ff; }
+nav li a:hover {
+  color: #4c65ff;
+  background-color: #FFF44C; }
 
 .open-button {
-  color: #4c65ff;
-  background-color: #F14F80;
+  color: #FFF44C;
+  background-color: #4c65ff;
   border: #1b1212;
   display: none; }
 
@@ -133,7 +131,7 @@ footer h2 {
   font-family: 'Share Tech Mono', cursive; }
 
 footer hr {
-  border-color: #4c65ff;
+  border-color: #FFF44C;
   border-width: 3px; }
 
 footer .container {
@@ -148,7 +146,7 @@ footer li {
   list-style: none; }
 
 footer a {
-  color: #4c65ff; }
+  color: #FFF44C; }
 
 footer a:hover {
   color: #FFF44C; }
@@ -190,8 +188,8 @@ main p {
   font-size: 1.3em; }
 
 main button {
-  background: #4c65ff;
-  color: #F14F80;
+  background: #FFF44C;
+  color: #4c65ff;
   border: none;
   font-family: 'Share Tech Mono', monospace;
   font-size: 2em;

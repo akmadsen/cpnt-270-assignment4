@@ -1,0 +1,16 @@
+.close-button { 
+    background: $background-color; 
+    color: $secondary-color; 
+    border: none; 
+
+    font-family: $paragraph-font; 
+    font-size: 1.4em;
+
+    padding: 5px 20px; 
+
+    margin-bottom: 20px; 
+    
+    &:focus { 
+        outline: 4px solid $accent-color;
+    }
+}

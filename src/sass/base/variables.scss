@@ -1,10 +1,12 @@
 //  Color Pallette 
-$background-color  : #F14F80; 
-$secondary-color   : #4c65ff; 
-$accent-color      : #FFF44C; 
+$background-color   : #4c65ff; 
+$primary-color      : #f14f80; 
+$secondary-color    : #FFF44C; 
 
-// Additional Colours 
-$button-border-colors: #1b1212;
+
+// Background and Foreground 
+$accent-color   : #FFF44C; 
+$solid-black    : #1b1212;
 
 // Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 
@@ -15,7 +17,7 @@ $extra-large-devices   : 1200px;
 // Fixed Heights and Widths 
 $mobile-menu-width: 300px; 
 $header-height: 80px; 
-$standard-padding: $header-height / 2; 
+$padding-margin-base: $header-height / 2; 
 
 // Animation Constants 
 $menu-transition-time: 0.2s; 
