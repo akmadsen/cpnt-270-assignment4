@@ -73,6 +73,19 @@
       margin-top: 40px;
       font-size: 1.8em; } }
 
+.card-container {
+  display: flex;
+  justify-content: space-between; }
+
+.blog-card {
+  background-color: red;
+  width: 300px;
+  border-radius: 15px; }
+  .blog-card img {
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+
 header {
   height: 80px;
   font-family: "Shared Tech Mono", monospace;

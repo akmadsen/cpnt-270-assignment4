@@ -1,0 +1,16 @@
+.card-container { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.blog-card { 
+    background-color: red; 
+    width: $card-width; 
+    border-radius: 15px; 
+
+    img {
+        width: $card-width; 
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px;
+    }
+}
