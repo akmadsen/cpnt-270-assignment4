@@ -2,36 +2,21 @@
  GENERAL
  * * * * * * * * * * * * * * * * * * * * * * */
 
- /*****
- * Colour Palette: (Black, White and 1-Colour) 
- *  Background  : #050505 (Black) 
- *  Theme       : #f31616 (Red) / #f53d3d (red highlight) 
- */
-
-
-
-/***** 
- * Bootstrap Breakpoints 
- * xs - considered the default 
- * Small Devices - 576px 
- * Medium Devices - 768px 
- * Large Devices - 992px 
- * Extra Large Devices - 1200px
- */ 
+@import './base/variables.scss'; 
 
  body { 
-    background-color: #050505; 
-    color: #f31616; 
+    background-color: $background-color; 
+    color: $secondary-color;
     overflow-x: hidden; 
 }   
 
 a:focus { 
-    outline: 2px solid #f31616; 
+    outline: 2px solid $secondary-color;
     text-decoration: none; 
 }
 
 button:focus { 
-    outline: 4px solid #050505; 
+    outline: 4px solid $background-color; 
 }
 
  /* * * * * * * * * * * * * * * * * * * * * * *
@@ -39,7 +24,7 @@ button:focus {
  * * * * * * * * * * * * * * * * * * * * * * */
 
 .mobile-menu { 
-    background-color: #f31616;
+    background-color: $secondary-color; 
     
     width: 300px; 
     height: 100vh; 
@@ -77,19 +62,19 @@ button:focus {
     display: block; 
     text-align: center; 
     font-size: 1.4em; 
-    color: #050505; 
+    color: $background-color; 
     width: 100%; 
 }
 
 .mobile-menu a:hover { 
-    background-color: #050505; 
-    color: #f31616; 
+    background-color: $background-color; 
+    color: $secondary-color;
     text-decoration: none; 
 }
 
 .close-button { 
-    background: #050505; 
-    color: #f31616;  
+    background: $background-color; 
+    color: $secondary-color; 
     border: none; 
 
     font-family: "Share Tech Mono", monospace; 
@@ -101,7 +86,7 @@ button:focus {
 }
 
 .close-button:focus { 
-    outline: 4px solid #f53d3d; 
+    outline: 4px solid $accent-color;
 }
 
 .closed { 
@@ -137,7 +122,7 @@ header .container {
 }
 
 header a { 
-    color: #f31616;
+    color: $secondary-color; 
     display: flex; 
     align-items: center;
     height: 100%;
@@ -145,7 +130,7 @@ header a {
 
 /* TODO: We need to figure out a good way to indicate hovering in the header*/
 header a:hover { 
-    color: #f53d3d; 
+    color: $accent-color;
     text-decoration: none; 
     position: relative; 
 }
@@ -180,14 +165,14 @@ header li a {
 }
 
 header li a:hover { 
-    color: #050505; 
-    background-color: #f31616; 
+    color: $background-color; 
+    background-color: $secondary-color;
 }
 
 .open-button { 
-    color: #f31616; 
-    background-color: #050505; 
-    border: #1b1212; 
+    color: $secondary-color;
+    background-color: $background-color; 
+    border: $button-border-colors; 
     display: none; 
 }
 
@@ -222,7 +207,7 @@ footer h2 {
 }
 
 footer hr { 
-    border-color: #f31616; 
+    border-color: $secondary-color;
     border-width: 3px; 
 }
 
@@ -241,11 +226,11 @@ footer li {
 }
 
 footer a { 
-    color: #f31616; 
+    color: $secondary-color;
 }
 
 footer a:hover { 
-    color: #f53d3d; 
+    color: $accent-color;
 }
 
  /* * * * * * * * * * * * * * * * * * * * * * *
@@ -306,8 +291,8 @@ main p {
 }
 
 main button { 
-    background: #f31616; 
-    color: #050505; 
+    background: $secondary-color;
+    color: $background-color; 
     border: none; 
     font-family: 'Share Tech Mono', monospace; 
     font-size: 2em; 
@@ -317,7 +302,7 @@ main button {
 }
 
 main button:hover {
-    background-color: #f53d3d; 
+    background-color: $accent-color;
 }
 
 @media (max-width: 992px) { 
@@ -379,7 +364,7 @@ Hero Section Styles
 .hero img { 
     width: 275px; 
     height: 400px; 
-    border: 2px dashed #f31616;
+    border: 2px dashed $secondary-color; 
     transform: rotate(-5deg) translate(20px, -20px); 
 
     margin-left: 120px;

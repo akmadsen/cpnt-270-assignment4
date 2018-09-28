@@ -1,19 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * *
  GENERAL
  * * * * * * * * * * * * * * * * * * * * * * */
-/*****
- * Colour Palette: (Black, White and 1-Colour) 
- *  Background  : #050505 (Black) 
- *  Theme       : #f31616 (Red) / #f53d3d (red highlight) 
- */
-/***** 
- * Bootstrap Breakpoints 
- * xs - considered the default 
- * Small Devices - 576px 
- * Medium Devices - 768px 
- * Large Devices - 992px 
- * Extra Large Devices - 1200px
- */
 body {
   background-color: #050505;
   color: #f31616;
