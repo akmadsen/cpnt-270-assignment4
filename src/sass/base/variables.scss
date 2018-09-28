@@ -6,8 +6,19 @@ $accent-color      : #FFF44C;
 // Additional Colours 
 $button-border-colors: #1b1212;
 
-// Measurements 
+// Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 
 $medium-devices        : 768px; 
 $large-devices         : 992px; 
 $extra-large-devices   : 1200px; 
+
+// Fixed Heights and Widths 
+$mobile-menu-width: 300px; 
+$header-height: 80px; 
+$standard-padding: $header-height / 2; 
+
+// Animation Constants 
+$menu-transition-time: 0.2s; 
+
+// Font Families 
+$paragraph-font: 'Shared Tech Mono', monospace; 
