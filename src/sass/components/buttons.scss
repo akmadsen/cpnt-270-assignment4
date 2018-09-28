@@ -1,9 +1,15 @@
+%button { 
+    font-family: $paragraph-font; 
+    border: none; 
+}
+
 .close-button { 
+    @extend %button; 
+
     background: $background-color; 
     color: $secondary-color; 
     border: none; 
 
-    font-family: $paragraph-font; 
     font-size: 1.4em;
 
     padding: 5px 20px; 
@@ -17,9 +23,11 @@
 
 
 .open-button { 
-    color: $primary-color;
+    @extend %button; 
+
     background-color: $background-color; 
-    border: $solid-black; 
+    color: $primary-color;
+    
     display: none; 
 
     @media (max-width: $medium-devices) { 
@@ -29,18 +37,26 @@
 
 
 .hero-button { 
+    @extend %button; 
+
     background-color: $primary-color;
     color: $secondary-color; 
     
-    border: none; 
-    font-family: 'Share Tech Mono', monospace; 
-    font-size: 2em; 
-    text-align: center;
     text-transform: uppercase; 
+    text-align: center;
+    
+    font-size: 2em; 
     font-weight: bold; 
+
+    transition: $tween-time; 
 
     &:hover {
         background-color: $secondary-color;
         color: $primary-color; 
+    }
+
+    @media (max-width: $small-devices) { 
+        margin-top: $padding-margin-base; 
+        font-size: 1.8em; 
     }
 }

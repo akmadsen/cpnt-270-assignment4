@@ -9,6 +9,7 @@ $accent-color   : #FFF44C;
 $solid-black    : #1b1212;
 $hero-text-bg   : unquote('#050505dc'); 
 
+
 // Fixed Heights and Widths 
 $mobile-menu-width: 300px; 
 $header-height: 80px; 
@@ -18,11 +19,13 @@ $padding-margin-base: $header-height / 2;
 
 // Animation Constants 
 $menu-transition-time: 0.2s; 
+$tween-time: 0.2s; 
 
 
 // Font Families 
 $paragraph-font: 'Shared Tech Mono', monospace; 
 $header-font: 'VT323', monospace; 
+
 
 // Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 

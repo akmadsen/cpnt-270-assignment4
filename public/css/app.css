@@ -35,11 +35,14 @@
 .closed {
   transform: translate(300px, 0px); }
 
+.close-button, .open-button, .hero-button {
+  font-family: "Shared Tech Mono", monospace;
+  border: none; }
+
 .close-button {
   background: #4c65ff;
   color: #FFF44C;
   border: none;
-  font-family: "Shared Tech Mono", monospace;
   font-size: 1.4em;
   padding: 5px 20px;
   margin-bottom: 20px; }
@@ -47,9 +50,8 @@
     outline: 4px solid #FFF44C; }
 
 .open-button {
-  color: #f14f80;
   background-color: #4c65ff;
-  border: #1b1212;
+  color: #f14f80;
   display: none; }
   @media (max-width: 768px) {
     .open-button {
@@ -58,15 +60,18 @@
 .hero-button {
   background-color: #f14f80;
   color: #FFF44C;
-  border: none;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 2em;
-  text-align: center;
   text-transform: uppercase;
-  font-weight: bold; }
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.2s; }
   .hero-button:hover {
     background-color: #FFF44C;
     color: #f14f80; }
+  @media (max-width: 576px) {
+    .hero-button {
+      margin-top: 40px;
+      font-size: 1.8em; } }
 
 header {
   height: 80px;
@@ -180,16 +185,33 @@ footer a {
 footer a:hover {
   color: #FFF44C; }
 
-.hero-content {
+.index-hero {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 75%; }
+  .index-hero .fake-book {
+    width: 200px;
+    background-color: #f14f80;
+    height: 300px;
+    margin-right: auto;
+    border-radius: 10px; }
   @media (max-width: 992px) {
-    .hero-content {
+    .index-hero {
       width: 100%; } }
+  @media (max-width: 576px) {
+    .index-hero {
+      flex-direction: column; }
+      .index-hero .fake-book {
+        margin-right: 0;
+        margin-bottom: 40px; }
+      .index-hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .index-hero .hero-text h1, .index-hero .hero-text h2 {
+          text-align: center; } }
 
 /* * * * * * * * * * * * * * * * * * * * * * 
 Hero Section Styles
