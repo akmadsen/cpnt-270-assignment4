@@ -46,6 +46,28 @@
   .close-button:focus {
     outline: 4px solid #FFF44C; }
 
+.open-button {
+  color: #f14f80;
+  background-color: #4c65ff;
+  border: #1b1212;
+  display: none; }
+  @media (max-width: 768px) {
+    .open-button {
+      display: block; } }
+
+.hero-button {
+  background-color: #f14f80;
+  color: #FFF44C;
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .hero-button:hover {
+    background-color: #FFF44C;
+    color: #f14f80; }
+
 header {
   height: 80px;
   font-family: "Shared Tech Mono", monospace;
@@ -105,14 +127,26 @@ nav {
     nav li {
       width: 100px; } }
 
-.open-button {
+.hero {
+  min-height: 600px;
   color: #f14f80;
-  background-color: #4c65ff;
-  border: #1b1212;
-  display: none; }
-  @media (max-width: 768px) {
-    .open-button {
-      display: block; } }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/denys-nevozhai-351730-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 30px 10px; }
+  .hero .container {
+    display: flex;
+    justify-content: center;
+    height: 600px; }
+  .hero h1, .hero h2, .hero p {
+    background: #050505dc;
+    padding: 0 10px; }
+  .hero h1, .hero h2 {
+    font-family: "VT323", monospace; }
 
 /* * * * * * * * * * * * * * * * * * * * * * *
  FOOTER
@@ -146,58 +180,16 @@ footer a {
 footer a:hover {
   color: #FFF44C; }
 
-.hero {
-  min-height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/denys-nevozhai-351730-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 30px 10px; }
-
-main .container {
-  display: flex;
-  justify-content: center;
-  height: 100%; }
-
-.main-content {
+.hero-content {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 75%; }
-
-main h1, main h2, main p {
-  background: #050505dc;
-  padding: 0 10px; }
-
-main h1, main h2 {
-  font-family: 'VT323', monospace; }
-
-main p {
-  text-align: justify;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1.3em; }
-
-main button {
-  background: #FFF44C;
-  color: #4c65ff;
-  border: none;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 2em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold; }
-
-main button:hover {
-  background-color: #FFF44C; }
-
-@media (max-width: 992px) {
-  .main-content {
-    width: 100%; } }
+  @media (max-width: 992px) {
+    .hero-content {
+      width: 100%; } }
 
 /* * * * * * * * * * * * * * * * * * * * * * 
 Hero Section Styles

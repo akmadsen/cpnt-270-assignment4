@@ -14,3 +14,33 @@
         outline: 4px solid $accent-color;
     }
 }
+
+
+.open-button { 
+    color: $primary-color;
+    background-color: $background-color; 
+    border: $solid-black; 
+    display: none; 
+
+    @media (max-width: $medium-devices) { 
+        display: block; 
+    }
+}
+
+
+.hero-button { 
+    background-color: $primary-color;
+    color: $secondary-color; 
+    
+    border: none; 
+    font-family: 'Share Tech Mono', monospace; 
+    font-size: 2em; 
+    text-align: center;
+    text-transform: uppercase; 
+    font-weight: bold; 
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $primary-color; 
+    }
+}

@@ -1,3 +1,4 @@
+// Header Component in General 
 header { 
     height: $header-height;
     font-family: $paragraph-font; 
@@ -31,6 +32,7 @@ header {
     }
 }
 
+// Company Portion of Header 
 .company { 
     display: flex; 
     align-items: center; 
@@ -44,6 +46,7 @@ header {
 }
 
 
+// Nav List portion of Header
 nav { 
     height: 100%;
     
@@ -85,18 +88,5 @@ nav {
          li { 
             width: 100px; 
         }
-    }
-}
-
-
-
-.open-button { 
-    color: $primary-color;
-    background-color: $background-color; 
-    border: $solid-black; 
-    display: none; 
-
-    @media (max-width: $medium-devices) { 
-        display: block; 
     }
 }
