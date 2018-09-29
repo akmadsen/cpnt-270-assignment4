@@ -76,6 +76,7 @@
 .card-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
   @media (max-width: 768px) {
@@ -84,11 +85,27 @@
       align-items: center;
       justify-content: flex-start; } }
 
+.footer-card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .footer-card-container {
+      align-items: stretch; } }
+  @media (max-width: 576px) {
+    .footer-card-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; } }
+
 .blog-card {
   background-color: gray;
   width: 30%;
   border-radius: 15px;
-  font-family: "Shared Tech Mono", monospace; }
+  font-family: "Shared Tech Mono", monospace;
+  margin-bottom: 40px; }
   .blog-card h3 {
     font-weight: bold; }
   .blog-card img {
@@ -97,12 +114,44 @@
     border-top-right-radius: 15px; }
   @media (max-width: 768px) {
     .blog-card {
-      width: 75%;
-      margin-bottom: 20px; } }
+      width: 75%; } }
   @media (max-width: 576px) {
     .blog-card {
-      width: 100%;
-      margin-bottom: 20px; } }
+      width: 100%; } }
+
+.footer-card, .social-card {
+  color: #FFF44C;
+  width: 22%; }
+  .footer-card h2, .social-card h2 {
+    font-family: "Shared Tech Mono", monospace;
+    font-size: 1.4em; }
+  .footer-card hr, .social-card hr {
+    border-color: #FFF44C;
+    border-width: 3px; }
+  .footer-card ul, .social-card ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column; }
+  .footer-card li, .social-card li {
+    display: block;
+    list-style: none; }
+  .footer-card a, .social-card a {
+    font-size: 1em;
+    color: #FFF44C; }
+    .footer-card a:hover, .social-card a:hover {
+      color: #FFF44C;
+      text-decoration: none; }
+  @media (max-width: 768px) {
+    .footer-card, .social-card {
+      width: 47%;
+      margin-bottom: 40px; } }
+  @media (max-width: 576px) {
+    .footer-card, .social-card {
+      width: 80%; } }
+
+.social-card ul {
+  flex-direction: row;
+  justify-content: space-between; }
 
 header {
   height: 80px;
@@ -184,37 +233,10 @@ nav {
   .hero h1, .hero h2 {
     font-family: "VT323", monospace; }
 
-/* * * * * * * * * * * * * * * * * * * * * * *
- FOOTER
- * * * * * * * * * * * * * * * * * * * * * * */
 footer {
-  height: 150px;
-  padding-top: 20px; }
-
-footer h2 {
-  text-align: center;
-  font-family: 'Share Tech Mono', cursive; }
-
-footer hr {
-  border-color: #FFF44C;
-  border-width: 3px; }
-
-footer .container {
-  height: 100%; }
-
-footer ul {
-  padding: 0;
-  display: flex;
-  justify-content: space-between; }
-
-footer li {
-  list-style: none; }
-
-footer a {
-  color: #FFF44C; }
-
-footer a:hover {
-  color: #FFF44C; }
+  background-color: #1b1212;
+  min-height: 300px;
+  padding-top: 40px; }
 
 main {
   padding: 40px 0; }
