@@ -6,6 +6,8 @@ main {
     }
 
     h2 {
+        color: $primary-color; 
+
         font-family: $header-font; 
         font-size: $large-font; 
         font-weight: bold; 

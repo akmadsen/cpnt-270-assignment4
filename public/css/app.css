@@ -1,5 +1,9 @@
+body {
+  background-color: #050505;
+  overflow-x: hidden; }
+
 .mobile-menu {
-  background-color: #FFF44C;
+  background-color: #f31616;
   width: 300px;
   height: 100vh;
   padding: 40px 0;
@@ -25,11 +29,11 @@
     display: block;
     text-align: center;
     font-size: 1.4em;
-    color: #4c65ff;
+    color: #050505;
     width: 100%; }
     .mobile-menu a:hover {
-      background-color: #4c65ff;
-      color: #FFF44C;
+      background-color: #050505;
+      color: #f31616;
       text-decoration: none; }
 
 .closed {
@@ -40,34 +44,34 @@
   border: none; }
 
 .close-button {
-  background: #4c65ff;
-  color: #FFF44C;
+  background: #050505;
+  color: #f84538;
   border: none;
   font-size: 1.4em;
   padding: 5px 20px;
   margin-bottom: 20px; }
   .close-button:focus {
-    outline: 4px solid #FFF44C; }
+    outline: 4px solid #f84538; }
 
 .open-button {
-  background-color: #4c65ff;
-  color: #f14f80;
+  background-color: #050505;
+  color: #f31616;
   display: none; }
   @media (max-width: 768px) {
     .open-button {
       display: block; } }
 
 .hero-button {
-  background-color: #f14f80;
-  color: #FFF44C;
+  background-color: #f31616;
+  color: #050505;
   text-transform: uppercase;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
   transition: 0.2s; }
   .hero-button:hover {
-    background-color: #FFF44C;
-    color: #f14f80; }
+    background-color: #f84538;
+    color: #f31616; }
   @media (max-width: 576px) {
     .hero-button {
       margin-top: 40px;
@@ -120,13 +124,13 @@
       width: 100%; } }
 
 .footer-card, .social-card {
-  color: #FFF44C;
+  color: #f84538;
   width: 22%; }
   .footer-card h2, .social-card h2 {
     font-family: "Shared Tech Mono", monospace;
     font-size: 1.4em; }
   .footer-card hr, .social-card hr {
-    border-color: #FFF44C;
+    border-color: #f84538;
     border-width: 3px; }
   .footer-card ul, .social-card ul {
     padding: 0;
@@ -137,9 +141,9 @@
     list-style: none; }
   .footer-card a, .social-card a {
     font-size: 1em;
-    color: #FFF44C; }
+    color: #f84538; }
     .footer-card a:hover, .social-card a:hover {
-      color: #FFF44C;
+      color: #f84538;
       text-decoration: none; }
   @media (max-width: 768px) {
     .footer-card, .social-card {
@@ -156,8 +160,8 @@
 header {
   height: 80px;
   font-family: "Shared Tech Mono", monospace;
-  background-color: #4c65ff;
-  color: #f14f80;
+  background-color: #050505;
+  color: #f31616;
   position: relative;
   z-index: 300; }
   header .container {
@@ -166,13 +170,13 @@ header {
     font-size: 1.4em;
     height: 100%; }
   header a {
-    color: #f14f80;
+    color: #f31616;
     display: flex;
     align-items: center;
     height: 100%;
     /* TODO: We need to figure out a good way to indicate hovering in the header*/ }
     header a:hover {
-      color: #FFF44C;
+      color: #f84538;
       text-decoration: none;
       position: relative; }
 
@@ -203,8 +207,8 @@ nav {
       width: 100%;
       justify-content: center; }
       nav li a:hover {
-        color: #4c65ff;
-        background-color: #FFF44C; }
+        color: #050505;
+        background-color: #f84538; }
   @media (max-width: 768px) {
     nav {
       display: none; } }
@@ -214,7 +218,7 @@ nav {
 
 .hero {
   min-height: 600px;
-  color: #f14f80;
+  color: #f31616;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,7 +238,7 @@ nav {
     font-family: "VT323", monospace; }
 
 footer {
-  background-color: #1b1212;
+  background-color: #050505;
   min-height: 300px;
   padding-top: 40px; }
 
@@ -245,6 +249,7 @@ main {
     flex-direction: column;
     align-items: center; }
   main h2 {
+    color: #f31616;
     font-family: "VT323", monospace;
     font-size: 3em;
     font-weight: bold;
@@ -258,8 +263,8 @@ main {
   width: 75%; }
   .index-hero-content .fake-book {
     width: 200px;
-    background-color: #f14f80;
-    color: #4c65ff;
+    background-color: #f31616;
+    color: #050505;
     display: flex;
     justify-content: center;
     align-items: center;
