@@ -10,6 +10,7 @@ $solid-black    : #1b1212;
 $white          : #fff; 
 $hero-text-bg   : unquote('#050505dc'); 
 
+$hero-img-filter: rgba(0,0,0,0.4);
 
 // Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 
@@ -52,3 +53,6 @@ $large-font: 3em;
 $footer-header-size: 1.4em; 
 $footer-body-size: 1em; 
 
+// Image URLs 
+$index-hero-bg: "../assets/denys-nevozhai-351730-unsplash.jpg";
+$products-hero-bg: '../assets/alex-knight-326705-unsplash.jpg'; 

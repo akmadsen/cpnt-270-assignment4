@@ -5,19 +5,21 @@
     * * * * * * * * * * * * * * * * * * * * * */
 
     .hero { 
-        height: 80vh; 
-        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), 
-        url('../assets/alex-knight-326705-unsplash.jpg'); 
-        background-size: cover; 
-        background-position: center; 
+        @include generate-hero-bg($products-hero-bg, $hero-img-filter);     
         
-        position: relative;
-        z-index: 200; 
+        .container { 
+            display: flex; 
+            flex-direction: row-reverse; 
+            align-items: center; 
+            justify-content: space-around; 
+        }
+
+        .hero-button { 
+            display: block; 
+            margin-left: auto;
+        }
         
         h1,  h2, p { 
-            background: #050505dc; 
-            padding: 0 10px;
-            
             text-align: right; 
         }
         
@@ -30,22 +32,6 @@
         }
         h2 { 
             font-size: 45px;
-        }
-        
-        p { 
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 1.6em
-        }
-        
-        .container { 
-            height: 100%;
-            display: flex; 
-            flex-direction: row-reverse; 
-            justify-content: center; 
-            align-items: center; 
-            position: relative; 
-            
-            width: 75%; 
         }
 
         img { 
@@ -100,99 +86,6 @@
             margin-bottom: 40px;
             font-family: 'VT323', monospace;
             font-size: 45px; 
-        }
-        
-    }
-
-    .book-card { 
-        display: flex; 
-        height: 400px;
-        position: relative;
-        
-        h3 { 
-            font-family: 'Share Tech Mono', monospace; 
-            font-weight: bold;
-        }
-        
-        p { 
-            font-family: 'Share Tech Mono', monospace; 
-            font-size: 1.2em;
-        }
-        
-        @media (max-width: $medium-devices) { 
-            
-            height: 300px;
-            margin-bottom: 40px; 
-            
-            &:nth-child(even) { 
-                flex-direction: row-reverse; 
-                margin-left: auto; 
-            }
-        }
-        
-        @media (min-width: ($medium-devices + 1)) {
-            &:hover .book-cover { 
-                transform: translate(0, -40px); 
-            }
-            
-            &:nth-child(even) { 
-                justify-content: flex-end;    
-                
-                .book-cover{ 
-                    left: 0;
-                }
-                
-                .book-description { 
-                    text-align: right; 
-                }
-            }
-
-            &:nth-child(odd) { 
-                justify-content: flex-start; 
-                    
-                .book-cover { 
-                    right: 0; 
-                }
-                   
-                .book-description { 
-                    text-align: left; 
-                }
-            }
-        }
-    }
-        
-    .book-cover { 
-        height: 300px;
-        width: 200px;
-        position: absolute; 
-        bottom: 0; 
-        transition: 0.2s; 
-        transform: translate(0px, 0px); 
-        
-        img {
-            height: 300px; 
-        }
-        
-        @media (max-width: $medium-devices) { 
-            position: static; 
-        }
-    }
-
-    .book-description { 
-        width: 75%; 
-        min-height: 225px;
-        margin-top: auto; 
-        border: 2px dashed #f31616;
-        
-        padding: 20px; 
-        
-        @media (max-width: $medium-devices) { 
-            width: auto; 
-            height: 100%;
-        }
-           
-        @media (max-width: $large-devices) {
-            width: 60%; 
         }
     }
 }

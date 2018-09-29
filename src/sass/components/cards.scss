@@ -3,10 +3,7 @@
 // --------------------------------------
 
 %card-container-base { 
-
-}
-
-.card-container { 
+    
     width: 100%;
 
     display: flex; 
@@ -14,6 +11,10 @@
 
     flex-direction: row; 
     justify-content: space-between; 
+}
+
+.card-container { 
+    @extend %card-container-base; 
 
     @media (max-width: $medium-devices) {
         flex-direction: column; 
@@ -23,13 +24,7 @@
 }
 
 .footer-card-container { 
-    width: 100%;
-
-    display: flex; 
-    flex-wrap: wrap;
-
-    flex-direction: row; 
-    justify-content: space-between; 
+    @extend %card-container-base; 
 
     @media (max-width: $medium-devices) {
         align-items: stretch; 
@@ -129,5 +124,102 @@
     ul { 
         flex-direction: row; 
         justify-content: space-between; 
+    }
+}
+
+
+// ----------------------------------------------------
+// Book Cards 
+// ----------------------------------------------------
+
+.book-card { 
+    display: flex; 
+    height: 400px;
+    position: relative;
+    
+    h3 { 
+        font-family: 'Share Tech Mono', monospace; 
+        font-weight: bold;
+    }
+    
+    p { 
+        font-family: 'Share Tech Mono', monospace; 
+        font-size: 1.2em;
+    }
+    
+    @media (max-width: $medium-devices) { 
+        
+        height: 300px;
+        margin-bottom: 40px; 
+        
+        &:nth-child(even) { 
+            flex-direction: row-reverse; 
+            margin-left: auto; 
+        }
+    }
+    
+    @media (min-width: ($medium-devices + 1)) {
+        &:hover .book-cover { 
+            transform: translate(0, -40px); 
+        }
+        
+        &:nth-child(even) { 
+            justify-content: flex-end;    
+            
+            .book-cover{ 
+                left: 0;
+            }
+            
+            .book-description { 
+                text-align: right; 
+            }
+        }
+
+        &:nth-child(odd) { 
+            justify-content: flex-start; 
+                
+            .book-cover { 
+                right: 0; 
+            }
+               
+            .book-description { 
+                text-align: left; 
+            }
+        }
+    }
+}
+    
+.book-cover { 
+    height: 300px;
+    width: 200px;
+    position: absolute; 
+    bottom: 0; 
+    transition: 0.2s; 
+    transform: translate(0px, 0px); 
+    
+    img {
+        height: 300px; 
+    }
+    
+    @media (max-width: $medium-devices) { 
+        position: static; 
+    }
+}
+
+.book-description { 
+    width: 75%; 
+    min-height: 225px;
+    margin-top: auto; 
+    border: 2px dashed #f31616;
+    
+    padding: 20px; 
+    
+    @media (max-width: $medium-devices) { 
+        width: auto; 
+        height: 100%;
+    }
+       
+    @media (max-width: $large-devices) {
+        width: 60%; 
     }
 }
