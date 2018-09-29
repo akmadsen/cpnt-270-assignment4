@@ -1,0 +1,62 @@
+%button { 
+    font-family: $paragraph-font; 
+    border: none; 
+}
+
+.close-button { 
+    @extend %button; 
+
+    background: $background-color; 
+    color: $secondary-color; 
+    border: none; 
+
+    font-size: 1.4em;
+
+    padding: 5px 20px; 
+
+    margin-bottom: 20px; 
+    
+    &:focus { 
+        outline: 4px solid $accent-color;
+    }
+}
+
+
+.open-button { 
+    @extend %button; 
+
+    background-color: $background-color; 
+    color: $primary-color;
+    
+    display: none; 
+
+    @media (max-width: $medium-devices) { 
+        display: block; 
+    }
+}
+
+
+.hero-button { 
+    @extend %button; 
+
+    background-color: $primary-color;
+    color: $background-color; 
+    
+    text-transform: uppercase; 
+    text-align: center;
+    
+    font-size: 2em; 
+    font-weight: bold; 
+
+    transition: $tween-time; 
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $primary-color; 
+    }
+
+    @media (max-width: $small-devices) { 
+        margin-top: $padding-margin-base; 
+        font-size: 1.8em; 
+    }
+}

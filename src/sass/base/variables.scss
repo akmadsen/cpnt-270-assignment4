@@ -1,0 +1,54 @@
+//  Color Pallette 
+$background-color   : #050505; 
+$primary-color      : #f31616; 
+$secondary-color    : #f84538; 
+
+
+// Background and Foreground 
+$accent-color   : #f84538; 
+$solid-black    : #1b1212;
+$white          : #fff; 
+$hero-text-bg   : unquote('#050505dc'); 
+
+
+// Bootstrap Screen Width Measurements 
+$small-devices         : 576px; 
+$medium-devices        : 768px; 
+$large-devices         : 992px; 
+$extra-large-devices   : 1200px; 
+
+// Other Fixed Heights and Widths 
+$mobile-menu-width: 300px; 
+
+$header-height: 80px; 
+
+$hero-height: 600px; 
+
+$footer-height: 300px; 
+
+$padding-margin-base: $header-height / 2; 
+
+// Main Card Widths
+$lg-card-width: 30%; 
+$md-card-width: 75%; 
+$sm-card-width: 100%;
+
+// Footer Card Widths 
+$footer-card-lg: 22%; 
+$footer-card-md: 47%; 
+$footer-card-sm: 80%; 
+
+// Animation Constants 
+$menu-transition-time: 0.2s; 
+$tween-time: 0.2s; 
+
+
+// Font Families 
+$header-font: 'VT323', monospace; 
+$paragraph-font: 'Shared Tech Mono', monospace; 
+
+// Font Sizes 
+$large-font: 3em; 
+$footer-header-size: 1.4em; 
+$footer-body-size: 1em; 
+

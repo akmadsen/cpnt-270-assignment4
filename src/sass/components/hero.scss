@@ -1,0 +1,31 @@
+.hero { 
+    min-height: $hero-height;
+    color: $primary-color; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+  
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("../assets/denys-nevozhai-351730-unsplash.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+
+    padding: 30px 10px; 
+    
+    .container {    
+        display: flex; 
+        justify-content: center; 
+        height: $hero-height;
+    }
+    
+    h1, h2, p { 
+        background: $hero-text-bg; 
+        padding: 0 10px;
+    }
+    
+    h1, h2 { 
+        font-family: $header-font; 
+    }
+}

@@ -1,0 +1,48 @@
+.index-hero-content { 
+    height: 100%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 75%; 
+    
+    .fake-book { 
+        width: 200px; 
+        background-color: $primary-color; 
+        color: $background-color; 
+
+        @include d-flex-center(); 
+        flex-direction: column; 
+
+        height: 300px;
+        margin-right: auto; 
+        border-radius: 10px; 
+
+        h3 { 
+            text-decoration: underline; 
+        }
+    }
+
+    @media (max-width: $large-devices) {       
+        width: 100%; 
+    }
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+
+        .fake-book { 
+            margin-right: 0; 
+            margin-bottom: $padding-margin-base; 
+        }
+
+        .hero-text { 
+            @include flex-column(); 
+
+            h1, h2 { 
+                text-align: center; 
+            }
+        }
+    }
+}
+
+

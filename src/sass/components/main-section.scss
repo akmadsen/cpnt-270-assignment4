@@ -1,0 +1,17 @@
+main {
+    padding: $padding-margin-base 0; 
+   
+    .container { 
+        @include flex-column(); 
+    }
+
+    h2 {
+        color: $primary-color; 
+
+        font-family: $header-font; 
+        font-size: $large-font; 
+        font-weight: bold; 
+        
+        margin-bottom: $padding-margin-base; 
+    }
+}

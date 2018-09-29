@@ -18,13 +18,12 @@
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/base-styles.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/app.css">
 
     <title>CPNT 270 - Assignment 4 - Cyberpunk Website</title>
 </head>
 
-<body>
+<body class="index">
 
     <!-- * * * * * * * * * * * * * * * * * * *
          Header and Navigation Components
@@ -47,7 +46,7 @@
                     <span>JP Publishing LLC.</span>
                 </a>
             </div>
-            <nav class="desktop-nav">
+            <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./product.html">Books</a></li>
@@ -60,22 +59,62 @@
     </header>
 
     <!-- * * * * * * * * * * * * * * * * * * *
-    Main Body / Hero Components (GOES AGAINST SPEC!!! DECOUPLE)
+    Hero 
     * * * * * * * * * * * * * * * * * * * -->
+    <div class="hero">
+        <div class="container">
+            <div class="index-hero-content">
+                <div class="fake-book">
+                    <h3>Fake Book</h3>
+                    <span>J. Doe</span>
+                </div>
+                <div class="hero-text">
+                    <h1>JP Publishing House, LLC. </h1>
+                    <h2>Premium Sci-fi Adventure</h2>
+                    <button class="hero-button">Check Our Store!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- * * * * * * * * * * * * * * * * * * *
+    Blog Post List 
+    * * * * * * * * * * * * * * * * * * * -->
+
     <main>
         <div class="container">
-            <div class="main-content">
-                <h1>C:\&gt;Jimmy Pseudonym</h1>
-                <h2>Premium Supplier of Cellulose-based Wetware Patches</h2>
-                <p>kanji otaku receding RAF stimulate network courier hotdog geodesic face forwards ablative semiotics
-                    youtube
-                    office bicycle. crypto- silent garage BASE jump silent camera savant A.I. youtube network tattoo
-                    voodoo
-                    god
-                    BASE jump advert man. tanto sensory soul-delay ablative 8-bit -ware girl RAF order-flow network
-                    industrial
-                    grade soul-delay girl RAF market.</p>
-                <button>Register</button>
+            <h2>Recent Blog Posts</h2>
+
+            <div class="card-container">
+                <div class="blog-card">
+                    <img src="./assets/raphael-schaller-335025-unsplash.jpg" alt="First Blog Post Image">
+                    <h3>Blog Post 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. </p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="./assets/raphael-schaller-335025-unsplash.jpg" alt="First Blog Post Image">
+                    <h3>Blog Post 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. </p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="./assets/raphael-schaller-335025-unsplash.jpg" alt="First Blog Post Image">
+                    <h3>Blog Post 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. </p>
+                </div>
             </div>
         </div>
     </main>
@@ -84,17 +123,50 @@
     Footer (Social Media Icons Req.)
     * * * * * * * * * * * * * * * * * * * -->
     <footer>
-        <div class="container">
-            <h2>Follow Us</h2>
-            <hr />
-            <ul>
-                <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a></li>
-                <li><a href="#"><i class="fas fa-rss-square fa-3x"></i></a></li>
-            </ul>
+        <div class="container footer-card-container">
+            <div class="footer-card">
+                <h2>Contact</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">Agency 1</a></li>
+                    <li><a href="#">Agency 2</a></li>
+                    <li><a href="#">Agency 3</a></li>
+                    <li><a href="#">Agency 4</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-card">
+                <h2>Contact</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">Agency 1</a></li>
+                    <li><a href="#">Agency 2</a></li>
+                    <li><a href="#">Agency 3</a></li>
+                    <li><a href="#">Agency 4</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-card">
+                <h2>Contact</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">Agency 1</a></li>
+                    <li><a href="#">Agency 2</a></li>
+                    <li><a href="#">Agency 3</a></li>
+                    <li><a href="#">Agency 4</a></li>
+                </ul>
+            </div>
+
+            <div class="social-card">
+                <h2>Follow Us</h2>
+                <hr />
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fas fa-rss-square fa-3x"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
