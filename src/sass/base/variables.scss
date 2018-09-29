@@ -11,12 +11,22 @@ $white          : #fff;
 $hero-text-bg   : unquote('#050505dc'); 
 
 
-// Fixed Heights and Widths 
+// Bootstrap Screen Width Measurements 
+$small-devices         : 576px; 
+$medium-devices        : 768px; 
+$large-devices         : 992px; 
+$extra-large-devices   : 1200px; 
+
+// Other Fixed Heights and Widths 
 $mobile-menu-width: 300px; 
 $header-height: 80px; 
 $hero-height: 600px; 
 $padding-margin-base: $header-height / 2; 
-$card-width: 300px; 
+
+$lg-card-width: 30%; 
+$md-card-width: 75%; 
+$sm-card-width: 100%;
+
 
 // Animation Constants 
 $menu-transition-time: 0.2s; 
@@ -24,14 +34,10 @@ $tween-time: 0.2s;
 
 
 // Font Families 
-$paragraph-font: 'Shared Tech Mono', monospace; 
 $header-font: 'VT323', monospace; 
+$paragraph-font: 'Shared Tech Mono', monospace; 
+
+// Font Sizes 
+$large-font: 3em; 
 
 
-// Bootstrap Screen Width Measurements 
-$small-devices         : 576px; 
-$medium-devices        : 768px; 
-$large-devices         : 992px; 
-$extra-large-devices   : 1200px; 
-
-// Other Widths

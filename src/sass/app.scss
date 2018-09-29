@@ -12,6 +12,9 @@
 @import './components/hero.scss'; 
 @import './components/footer.scss'; 
 
+// Large Aggregate Components 
+@import './components/main-section.scss'; 
+
 // Page Specific Styles
 @import './pages/index.scss'; 
 @import './pages/product.scss'; 
