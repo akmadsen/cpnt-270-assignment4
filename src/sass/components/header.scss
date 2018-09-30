@@ -30,6 +30,12 @@ header {
             position: relative; 
         }
     }
+
+    @media (max-width: $small-devices) { 
+        span { 
+            font-size: $extra-small-font; 
+        }
+    }
 }
 
 // Company Portion of Header 
