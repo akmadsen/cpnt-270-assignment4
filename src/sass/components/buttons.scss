@@ -3,14 +3,44 @@
     border: none; 
 }
 
-.close-button { 
+%open-close-base { 
     @extend %button; 
 
     background: $background-color; 
-    color: $secondary-color; 
-    border: none; 
+    color: $primary-color; 
 
     font-size: 1.4em;
+}
+
+%stylish-base { 
+    @extend %button; 
+
+    background-color: $primary-color;
+    color: $background-color; 
+
+    font-size: 2em; 
+
+    text-align: center;
+
+    &:focus { 
+        outline-color: $accent-color;
+    }
+}
+
+.open-button { 
+    @extend %open-close-base; 
+
+    height: 100%;
+
+    display: none; 
+
+    @media (max-width: $medium-devices) { 
+        display: block; 
+    }
+}
+
+.close-button { 
+    @extend %open-close-base; 
 
     padding: 5px 20px; 
 
@@ -21,34 +51,11 @@
     }
 }
 
-
-.open-button { 
-    @extend %button; 
-
-    background-color: $background-color; 
-    color: $primary-color;
-    height: 100%;
-
-    font-size: 1.4em; 
-    
-    display: none; 
-
-    @media (max-width: $medium-devices) { 
-        display: block; 
-    }
-}
-
-
 .hero-button { 
-    @extend %button; 
+    @extend %stylish-base; 
 
-    background-color: $primary-color;
-    color: $background-color; 
-    
     text-transform: uppercase; 
-    text-align: center;
-    
-    font-size: 2em; 
+ 
     font-weight: bold; 
 
     transition: $tween-time; 
@@ -58,12 +65,14 @@
         color: $primary-color; 
     }
 
-    &:focus { 
-        outline-color: $accent-color;
-    }
-
     @media (max-width: $small-devices) { 
         margin-top: $padding-margin-base; 
         font-size: 1.5em; 
     }
+}
+
+.submit-button { 
+    @extend %stylish-base; 
+    font-size: 1.5em; 
+    padding: $padding-margin-base / 4 $padding-margin-base / 2; 
 }
