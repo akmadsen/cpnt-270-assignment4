@@ -26,4 +26,12 @@
     h1, h2 { 
         font-family: $header-font; 
     }
+
+    h1 { 
+        font-size: $large-font; 
+    }
+
+    h2 { 
+        font-size: $medium-font; 
+    }
 }
