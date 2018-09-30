@@ -14,19 +14,26 @@
     
     .fake-book { 
         width: 200px; 
-        background-color: $primary-color; 
-        color: $background-color; 
+        
+        color: $primary-color; 
+        font-family: $paragraph-font; 
+        text-shadow: 1px 1px 2px black;
 
+        background: 
+            // linear-gradient($hero-img-filter, $hero-img-filter), 
+            url($book-cover-url); 
+        background-size: cover; 
+        background-position: center; 
+        
         @include d-flex-center(); 
         flex-direction: column; 
+        justify-content: flex-end; 
+        
+        padding-bottom: $padding-margin-base; 
 
         height: 300px;
         margin-right: auto; 
         border-radius: 10px; 
-
-        h3 { 
-            text-decoration: underline; 
-        }
     }
 
     @media (max-width: $large-devices) {       
