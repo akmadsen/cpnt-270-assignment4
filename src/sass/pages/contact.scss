@@ -1,7 +1,65 @@
 .contact { 
-    background-color: yellowgreen; 
-
     .hero { 
         @include generate-hero-bg($contact-hero-bg, $hero-img-filter); 
+    }
+
+    main { 
+
+        font-family: $paragraph-font; 
+        color: $primary-color; 
+
+        input, label, textarea { 
+            background-color: $background-color; 
+            border-color: $primary-color; 
+            color: $primary-color; 
+
+            padding: $padding-margin-base / 8; 
+            
+            display: block; 
+
+            width: 100%; 
+
+            &:focus { 
+                border-color: $accent-color; 
+            }
+        }
+
+        label { 
+            font-size: $medium-font; 
+        }
+
+        input, textarea { 
+            font-size: $small-font; 
+            margin-bottom: $padding-margin-base; 
+        }
+
+        .field-box { 
+            display: flex; 
+            flex-direction: column; 
+
+            margin-bottom: $padding-margin-base; 
+            border-style: groove; 
+            border-color: $primary-color; 
+            border-width: 2px; 
+            padding: $padding-margin-base; 
+        }
+
+        textarea { 
+            resize: none; 
+        }
+
+        button { 
+            border: none; 
+            background-color: $primary-color; 
+            color: $background-color; 
+            font-size: $medium-font; 
+            padding: $padding-margin-base / 4 $padding-margin-base / 2; 
+        }
+
+        @media (max-width: $medium-devices) { 
+            .field-box { 
+                padding: $padding-margin-base / 2; 
+            }
+        }
     }
 }
