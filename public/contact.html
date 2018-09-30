@@ -74,21 +74,26 @@
 
             <h2>Send Us Your Thoughts</h2>
             <form action="#" method="post">
-                <h3>Your Message</h3>
-                <!-- Comment Text Area -->
-                <label for="message">Comment:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="I think that Cyberpunk is the best book genre because..."></textarea>
-               
-                <h3>Your Contact Info</h3>
-                <!-- Name Field -->
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="name" placeholder="John Doe" />
-
-                <!-- Email Field -->
-                <label for="email">Email:</label>
-                <input id="email" type="text" name="email" placeholder="john.doe@ecorp.biz" />
-
-                <button type="submit">Submit Your Thought</button>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <!-- Comment Text Area -->
+                    <label for="message">Comment:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="I think that Cyberpunk is the best book genre because..."></textarea>
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>Your Contact Info</legend>
+                    <!-- Name Field -->
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" placeholder="John Doe" />
+                    
+                    <!-- Email Field -->
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" placeholder="john.doe@ecorp.biz" />
+                </fieldset>
+                
+                
+                <button type="submit">Submit Comment</button>
             </form>
         </div>
     </main>
