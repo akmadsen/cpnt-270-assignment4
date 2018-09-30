@@ -71,7 +71,7 @@
 }
 
 .footer-card { 
-    color: $secondary-color;
+    color: $primary-color;
 
     width: $footer-card-lg; 
 
@@ -99,7 +99,7 @@
 
     a { 
         font-size: $footer-body-size; 
-        color: $secondary-color; 
+        color: $primary-color; 
 
         &:hover { 
             color: $accent-color;
@@ -124,6 +124,12 @@
     ul { 
         flex-direction: row; 
         justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    a { 
+        display: block; 
+        margin: 5px; 
     }
 }
 
