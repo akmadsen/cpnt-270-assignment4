@@ -143,6 +143,8 @@
     height: 400px;
     position: relative;
     
+    color: $primary-color; 
+
     h3 { 
         font-family: 'Share Tech Mono', monospace; 
         font-weight: bold;
@@ -153,17 +155,7 @@
         font-size: 1.2em;
     }
     
-    @media (max-width: $medium-devices) { 
-        
-        height: 300px;
-        margin-bottom: 40px; 
-        
-        &:nth-child(even) { 
-            flex-direction: row-reverse; 
-            margin-left: auto; 
-        }
-    }
-    
+    // These Styles should ONLY act on Large Devices 
     @media (min-width: ($medium-devices + 1)) {
         &:hover .book-cover { 
             transform: translate(0, -40px); 
@@ -193,22 +185,49 @@
             }
         }
     }
+
+    // These Styles apply to Medium Devices and Lower
+    @media (max-width: $medium-devices) and (min-width: ($small-devices + 1)) { 
+        
+        height: 300px;
+        margin-bottom: 40px; 
+        
+        &:nth-child(even) { 
+            flex-direction: row-reverse; 
+            margin-left: auto; 
+        }
+    }
+
+    @media (max-width: $small-devices) { 
+        flex-direction: column; 
+        align-items: center; 
+        height: auto;
+        margin-bottom: $padding-margin-base; 
+    }
 }
     
 .book-cover { 
-    height: 300px;
-    width: 200px;
     position: absolute; 
     bottom: 0; 
     transition: 0.2s; 
     transform: translate(0px, 0px); 
     
     img {
-        height: 300px; 
+        width: 200px; 
     }
     
     @media (max-width: $medium-devices) { 
-        position: static; 
+        position: static;         
+        img { 
+            display: block; 
+            margin: 0 auto; 
+        }
+    }
+
+    @media (max-width: $small-devices) {
+        img { 
+            width: 80%;         
+        }
     }
 }
 
@@ -220,12 +239,13 @@
     
     padding: 20px; 
     
-    @media (max-width: $medium-devices) { 
-        width: auto; 
-        height: 100%;
-    }
-       
     @media (max-width: $large-devices) {
         width: 60%; 
     }
+
+    @media (max-width: $medium-devices) { 
+        width: 80%;
+    }
+       
+
 }
