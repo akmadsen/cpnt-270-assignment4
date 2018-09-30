@@ -8,7 +8,7 @@ $secondary-color    : #f84538;
 $accent-color   : #f84538; 
 $solid-black    : #1b1212;
 $white          : #fff; 
-$hero-text-bg   : unquote('#050505dc'); 
+$hero-text-bg   : rgba(5, 5, 5, 0.863); 
 
 $hero-img-filter: rgba(0,0,0,0.4);
 
@@ -49,10 +49,14 @@ $paragraph-font: 'Shared Tech Mono', monospace;
 
 // Font Sizes 
 $large-font: 3em; 
+$medium-font: 1.3em; 
+$small-font: 1.2em; 
+
 $footer-header-size: 1.4em; 
 $footer-body-size: 1em; 
 
 // Image URLs 
 $index-hero-bg: "../assets/denys-nevozhai-351730-unsplash.jpg";
 $products-hero-bg: '../assets/alex-knight-326705-unsplash.jpg'; 
-$about-hero-bg: '../assets/joia-de-jong-725427-unsplash.jpg' 
+$about-hero-bg: '../assets/joia-de-jong-725427-unsplash.jpg'; 
+$contact-hero-bg: '../assets/aditya-saxena-422675-unsplash.jpg';  
