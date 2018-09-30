@@ -18,3 +18,11 @@
     background-position: center; 
     background-attachment: fixed; 
 }
+
+@mixin underglow() { 
+    box-shadow: 0px 5px 18px 1px rgba(253, 13, 13, 0.7);
+}
+
+@mixin inset-underglow () { 
+    box-shadow: inset -8px -1px 12px 6px rgba(253, 13, 13, 0.7);
+}
