@@ -54,12 +54,16 @@
     transition: $tween-time; 
 
     &:hover {
-        background-color: $secondary-color;
+        background-color: $background-color;
         color: $primary-color; 
+    }
+
+    &:focus { 
+        outline-color: $accent-color;
     }
 
     @media (max-width: $small-devices) { 
         margin-top: $padding-margin-base; 
-        font-size: 1.8em; 
+        font-size: 1.5em; 
     }
 }
