@@ -19,15 +19,14 @@ $large-devices         : 992px;
 $extra-large-devices   : 1200px; 
 
 // Other Fixed Heights and Widths 
-$mobile-menu-width: 300px; 
-
-$header-height: 80px; 
-
-$hero-height: 600px; 
-
+$mobile-menu-width: 300px;
+$header-height: 80px;
+$hero-height: 600px;
 $footer-height: 300px; 
 
 $padding-margin-base: $header-height / 2; 
+
+$author-pic-width: 250px; 
 
 // Main Card Widths
 $lg-card-width: 30%; 
@@ -56,3 +55,4 @@ $footer-body-size: 1em;
 // Image URLs 
 $index-hero-bg: "../assets/denys-nevozhai-351730-unsplash.jpg";
 $products-hero-bg: '../assets/alex-knight-326705-unsplash.jpg'; 
+$about-hero-bg: '../assets/joia-de-jong-725427-unsplash.jpg' 
