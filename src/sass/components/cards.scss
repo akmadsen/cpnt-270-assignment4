@@ -1,62 +1,36 @@
-// --------------------------------------
-// Card Containers
-// --------------------------------------
-
-%card-container-base { 
-    
-    width: 100%;
-
-    display: flex; 
-    flex-wrap: wrap;
-
-    flex-direction: row; 
-    justify-content: space-between; 
-}
-
-.card-container { 
-    @extend %card-container-base; 
-
-    @media (max-width: $medium-devices) {
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: flex-start; 
-    }
-}
-
-.footer-card-container { 
-    @extend %card-container-base; 
-
-    @media (max-width: $medium-devices) {
-        align-items: stretch; 
-    }
-
-    @media(max-width: $small-devices) { 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: flex-start; 
-    }
-}
-
 
 // --------------------------------------
 // Cards 
 // --------------------------------------
 
 .blog-card { 
-    background-color: gray; 
+    background-color: $background-color;
+    
+    @include underglow(); 
+    
     width: $lg-card-width; 
     border-radius: 15px; 
     
     font-family: $paragraph-font; 
 
-    h3 { 
-        font-weight: bold; 
-    }
-
     img {
         width: 100%; 
         border-top-left-radius: 15px; 
         border-top-right-radius: 15px;
+    }
+
+    .card-blurb {
+        padding: 20px; 
+    }
+
+    h3 {
+        margin-top: $padding-margin-base / 2;  
+        font-weight: bold; 
+    }
+
+    hr { 
+        border-color: $primary-color; 
+        border-width: 2px;
     }
 
     margin-bottom: $padding-margin-base; 
@@ -69,6 +43,12 @@
         width: $sm-card-width; 
     }
 }
+
+
+
+// --------------------------------------
+// Footer Cards 
+// --------------------------------------
 
 .footer-card { 
     color: $primary-color;
