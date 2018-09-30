@@ -1,3 +1,9 @@
+.index { 
+    .hero { 
+        @include generate-hero-bg($index-hero-bg, $hero-img-filter);     
+    }
+}
+
 .index-hero-content { 
     height: 100%;
 

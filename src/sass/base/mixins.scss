@@ -9,3 +9,12 @@
     justify-content: center; 
     align-items: center; 
 }
+
+@mixin generate-hero-bg($img-url, $filter-color) { 
+    background: 
+        linear-gradient($filter-color, $filter-color), 
+        url($img-url); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}

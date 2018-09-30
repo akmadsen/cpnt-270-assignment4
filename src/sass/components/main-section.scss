@@ -1,6 +1,9 @@
 main {
     padding: $padding-margin-base 0; 
    
+    position: relative;
+    z-index: 0; 
+
     .container { 
         @include flex-column(); 
     }

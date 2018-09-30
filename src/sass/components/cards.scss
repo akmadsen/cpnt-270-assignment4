@@ -3,10 +3,7 @@
 // --------------------------------------
 
 %card-container-base { 
-
-}
-
-.card-container { 
+    
     width: 100%;
 
     display: flex; 
@@ -14,6 +11,10 @@
 
     flex-direction: row; 
     justify-content: space-between; 
+}
+
+.card-container { 
+    @extend %card-container-base; 
 
     @media (max-width: $medium-devices) {
         flex-direction: column; 
@@ -23,13 +24,7 @@
 }
 
 .footer-card-container { 
-    width: 100%;
-
-    display: flex; 
-    flex-wrap: wrap;
-
-    flex-direction: row; 
-    justify-content: space-between; 
+    @extend %card-container-base; 
 
     @media (max-width: $medium-devices) {
         align-items: stretch; 
@@ -76,7 +71,7 @@
 }
 
 .footer-card { 
-    color: $secondary-color;
+    color: $primary-color;
 
     width: $footer-card-lg; 
 
@@ -104,7 +99,7 @@
 
     a { 
         font-size: $footer-body-size; 
-        color: $secondary-color; 
+        color: $primary-color; 
 
         &:hover { 
             color: $accent-color;
@@ -129,5 +124,128 @@
     ul { 
         flex-direction: row; 
         justify-content: space-between; 
+        flex-wrap: wrap; 
     }
+
+    a { 
+        display: block; 
+        margin: 5px; 
+    }
+}
+
+
+// ----------------------------------------------------
+// Book Cards 
+// ----------------------------------------------------
+
+.book-card { 
+    display: flex; 
+    height: 400px;
+    position: relative;
+    
+    color: $primary-color; 
+
+    h3 { 
+        font-family: 'Share Tech Mono', monospace; 
+        font-weight: bold;
+    }
+    
+    p { 
+        font-family: 'Share Tech Mono', monospace; 
+        font-size: 1.2em;
+    }
+    
+    // These Styles should ONLY act on Large Devices 
+    @media (min-width: ($medium-devices + 1)) {
+        &:hover .book-cover { 
+            transform: translate(0, -40px); 
+        }
+        
+        &:nth-child(even) { 
+            justify-content: flex-end;    
+            
+            .book-cover{ 
+                left: 0;
+            }
+            
+            .book-description { 
+                text-align: right; 
+            }
+        }
+
+        &:nth-child(odd) { 
+            justify-content: flex-start; 
+                
+            .book-cover { 
+                right: 0; 
+            }
+               
+            .book-description { 
+                text-align: left; 
+            }
+        }
+    }
+
+    // These Styles apply to Medium Devices and Lower
+    @media (max-width: $medium-devices) and (min-width: ($small-devices + 1)) { 
+        
+        height: 300px;
+        margin-bottom: 40px; 
+        
+        &:nth-child(even) { 
+            flex-direction: row-reverse; 
+            margin-left: auto; 
+        }
+    }
+
+    @media (max-width: $small-devices) { 
+        flex-direction: column; 
+        align-items: center; 
+        height: auto;
+        margin-bottom: $padding-margin-base; 
+    }
+}
+    
+.book-cover { 
+    position: absolute; 
+    bottom: 0; 
+    transition: 0.2s; 
+    transform: translate(0px, 0px); 
+    
+    img {
+        width: 200px; 
+    }
+    
+    @media (max-width: $medium-devices) { 
+        position: static;         
+        img { 
+            display: block; 
+            margin: 0 auto; 
+        }
+    }
+
+    @media (max-width: $small-devices) {
+        img { 
+            width: 80%;         
+        }
+    }
+}
+
+.book-description { 
+    width: 75%; 
+    min-height: 225px;
+    margin-top: auto; 
+    border: 2px dashed #f31616;
+    
+    padding: 20px; 
+    
+    @media (max-width: $large-devices) {
+        width: 60%; 
+    }
+
+    @media (max-width: $medium-devices) { 
+        width: 80%;
+    }
+       
+
 }
