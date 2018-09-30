@@ -1,3 +1,7 @@
 .contact { 
     background-color: yellowgreen; 
+
+    .hero { 
+        @include generate-hero-bg($contact-hero-bg, $hero-img-filter); 
+    }
 }
