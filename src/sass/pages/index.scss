@@ -42,7 +42,8 @@
 
     @media (max-width: $medium-devices) {
         flex-direction: column; 
-
+        align-items: center; 
+        
         .fake-book { 
             margin-right: 0; 
             margin-bottom: $padding-margin-base; 
