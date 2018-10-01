@@ -6,6 +6,8 @@ header {
     background-color: $background-color; 
     color: $primary-color; 
 
+    @include underglow(); 
+
     position: relative; 
     z-index: 300; 
 

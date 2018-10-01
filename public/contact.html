@@ -24,43 +24,49 @@
 </head>
 
 <body class="contact">
-    <!-- * * * * * * * * * * * * * * * * * * *
-         Header and Navigation Components
-        * * * * * * * * * * * * * * * * * * * -->
-    <div id="mobile-menu" class="mobile-menu closed">
-        <button id="close-button" class="close-button">Close</button>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./product.html">Books</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </div>
 
-    <header>
-        <div class="container">
-            <div class="company" href="./index.html">
-                <a href="./index.html">
-                    <i class="fas fa-file-contract fa-2x"></i>
-                    <span>JP Publishing LLC.</span>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./product.html">Books</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="open-button" id="open-button"><i class="fas fa-bars"></i></button>
+    <div class="nav-container">
+
+        <!-- * * * * * * * * * * * * * * * * * * *
+            Header and Navigation Components
+            * * * * * * * * * * * * * * * * * * * -->
+        <div id="mobile-menu" class="mobile-menu closed">
+            <button id="close-button" class="close-button">Close</button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product.html">Books</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </div>
-    </header>
+
+        <header>
+            <div class="container">
+                <div class="company" href="./index.html">
+                    <a href="./index.html">
+                        <i class="fas fa-file-contract fa-2x"></i>
+                        <span>JP Publishing LLC.</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Books</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="open-button" id="open-button"><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+        
+    </div>
 
     <!-- * * * * * * * * * * * * * * * * * * *
     Hero 
     * * * * * * * * * * * * * * * * * * * -->
     <div class="hero">
+        <div class="nav-spacer"></div>
         <div class="container">
             <h1>Contact Our Team</h1>
         </div>
@@ -91,7 +97,7 @@
                     <label for="email">Email:</label>
                     <input id="email" type="text" name="email" placeholder="john.doe@ecorp.biz" />
                 </fieldset>
-              
+
                 <button type="submit" class="submit-button">Submit Comment</button>
             </form>
         </div>
