@@ -33,6 +33,15 @@
         border-width: 2px;
     }
 
+    a { 
+        color: $primary-color; 
+    
+        &:hover { 
+            color: $accent-color; 
+            text-decoration: none; 
+        }
+    }
+
     margin-bottom: $padding-margin-base; 
 
     @media (max-width: $medium-devices) { 
