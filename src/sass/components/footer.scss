@@ -48,6 +48,17 @@ footer {
         margin-right: $padding-margin-base; 
         margin-bottom: 0; 
     }
+
+    @media (max-width: $medium-devices) {
+        a { 
+            font-size: 1em; 
+            padding: 0 5px; 
+        }
+
+        h2 { 
+            font-size: 1.2em; 
+        }
+    }
 }
 
 .social-media { 
