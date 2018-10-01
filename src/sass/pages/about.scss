@@ -2,7 +2,8 @@
     .hero {
         
         @include generate-hero-bg($about-hero-bg, $hero-img-filter); 
-        
+        background-position: 50% 80%;
+
         .container { 
             flex-direction: column; 
             justify-content: center; 
