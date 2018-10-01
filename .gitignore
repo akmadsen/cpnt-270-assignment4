@@ -1,5 +1,5 @@
 # CUSTOM GITIGNORE
-public/css/app.css
+css/
 
 # Logs
 logs
