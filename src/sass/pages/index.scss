@@ -2,6 +2,10 @@
     .hero { 
         @include generate-hero-bg($index-hero-bg, $hero-img-filter);     
     }
+
+    .container > p { 
+        margin-bottom: $padding-margin-base * 2; 
+    }
 }
 
 .index-hero-content { 
